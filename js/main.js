@@ -1,4 +1,24 @@
-const navMenu = document.getElementById('nav-menu') 
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if($(window).width() <= 768) {
+            if($(this).scrollTop() > 40) {
+                $('.header-nav').css('height', '3.5rem')
+                $('.header-nav').css('background-color' , '#EFFFFD')
+                $('.header-nav').css('transition' , '.4s')
+                $('.header').css('background-color', '#EFFFFD')
+                $('.header').css('box-shadow', '1px 1px 10px 0px #0000006e')
+            } else {
+                $('.header-nav').css('height', '5rem')
+                $('.header-nav').css('background-color' , '#398AB9')
+                $('.header-nav').css('transition' , '.4s')
+                $('.header').css('background-color', '#398AB9')
+                $('.header').css('box-shadow', 'none')
+            }
+        }
+    })
+})
+
+const navMenu = document.getElementById('nav-menu')
 const navToggleMenu = document.getElementById('nav-toggle')
 const navCloseMenu = document.getElementById('nav-close')
 
@@ -16,7 +36,7 @@ if (navCloseMenu) {
 
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
@@ -26,17 +46,17 @@ const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.header--nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
+        } else {
             document.querySelector('.header--nav__menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
