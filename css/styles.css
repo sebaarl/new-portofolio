@@ -323,6 +323,11 @@ a {
     animation: sql 3s;
 }
 
+.sql {
+    width: 50%;
+    animation: sql 3s;
+}
+
 @keyframes html {
     0% {
        width: 0%; 
@@ -380,6 +385,16 @@ a {
 
     100% {
         width:30%;
+    }
+}
+
+@keyframes git {
+    0% {
+       width: 0%; 
+    }
+
+    100% {
+        width:50%;
     }
 }
 
