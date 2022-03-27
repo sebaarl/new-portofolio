@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Rvera</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav bd-grid">
+            <div>
+                <a href="" class="header-nav__logo">Sebastian R</a>
+            </div>
+            <div class="header--nav__menu" id="nav-menu">
+                <div class="nav--toggle__close" id="nav-close">
+                    <i class='bx bx-x' id="close"></i>
+                </div>
+                <ul class="header--nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
+                    <li class="nav__item"><a href="#skill" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Proyectos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home home__grid" id="home">
+            <div class="home__container">
+                <h1 class="home__title" data-aos="fade-right"><span>HO</span><br>LA.</h1>
+                <p class="home__subtitle">Soy Sebastian Rivera, estudiante de Ingeniería en Informática</p>
+                <a href="" class="btn">Descargar CV</a>
+            </div>
+            <div class="home__img">
+                <img src="./assets/img/Code Development _Flatline.png" alt="" class="home__img">
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div data-aos="fade-right">
+                <h2 class="section-title">Sobre mi</h2>
+                <div class="about__container bd-grid">
+                    <h2 class="about__subtitle">Soy Sebastian Rivera</h2>
+                    <span class="about__profession">Futuro Ingeniero en Infromatica</span>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ex autem ad, praesentium laudantium
+                        at totam accusantium vel explicabo repellendus dolor corrupti nisi ipsa, aut voluptas temporibus
+                        nesciunt, rem voluptatum?
+                    </p>
+                    <div class="about__social">
+                        <a href="" class="about__social--icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="" class="about__social--icon"><i class='bx bxl-github'></i></a>
+                        <a href="" class="about__social--icon"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skill section" id="skill">
+            <div class="about__skill" data-aos="fade-right">
+                <h2 class="section-title skill__title">Mis habilidades</h2>
+                <div class="skill__container">
+                    <li>
+                        <h3>HTML</i></h3>
+                        <span class="skill__bar"><span class="html"></span></span>
+                    </li>
+                    <li>
+                        <h3>CSS</h3>
+                        <span class="skill__bar"><span class="css"></span></span>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <span class="skill__bar"><span class="js"></span></span>
+                    </li>
+                    <li>
+                        <h3>PHP</h3>
+                        <span class="skill__bar"><span class="php"></span></span>
+                    </li>
+                    <li>
+                        <h3>Python</h3>
+                        <span class="skill__bar"><span class="py"></span></span>
+                    </li>
+                    <li>
+                        <h3>SQL</h3>
+                        <span class="skill__bar"><span class="sql"></span></span>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact__container bd-grid">
+                <div class="contact__form">
+                    <h2 class="about__subtitle">Enviame un mensaje</h2>
+                    <form action="email.php" method="POST" id="form">
+                        <div class="input_form">
+                            <input type="text" placeholder="Nombre completo" name="name" required>
+                        </div>
+                        <div class="input_form">
+                            <input type="email" placeholder="Correo electronico" name="email" required>
+                        </div>
+                        <div class="input_form">
+                            <input type="text" placeholder="Asunto" name="subject" required>
+                        </div>
+                        <div class="input_form">
+                            <textarea cols="30" rows="8" placeholder="Mensaje" name="message" required></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" class="btn-contact" value="Enviar mensaje"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script> data-aos="fade-right"
+</body>
+
+</html>
