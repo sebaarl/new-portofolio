@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    margin: 4rem 0 0 0;
+    margin: 5rem 0 0 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #EFFFFD;
@@ -93,7 +93,7 @@ a {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 100%;
+        width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--light-color);
@@ -139,14 +139,6 @@ a {
     cursor: pointer;
 }
 
-.nav--toggle__close {
-    font-size: 3rem;
-    color: var(--text-color);
-    cursor: pointer;
-    position: fixed;
-    top: 5px;
-    left: 85%;
-}
 
 .show-menu {
     right: 0;
@@ -501,4 +493,51 @@ a {
     font-weight: bold;
     outline: none;
     cursor: pointer;
+}
+
+.footer{
+    background-color: var(--first-color);
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url(../assets/img/wavefooter.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__container{
+    row-gap: 2rem;
+    margin-top: 30px;
+}
+
+.footer__title{
+    font-size: .938rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+.footer__link{
+    padding: .25rem 0;
+    color: var(--light-color);
+}
+
+.footer__link:hover{
+    color: var(--text-color);
+}
+
+.footer__social{
+    font-size: 1.4rem;
+    margin-right: .5rem;
+    color: var(--light-color);
+}
+
+.footer__social:hover{
+    color: var(--text-color);
 }

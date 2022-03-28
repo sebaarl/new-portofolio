@@ -22,21 +22,18 @@ $(document).ready(function() {
     })
 })
 
-const navMenu = document.getElementById('nav-menu')
-const navToggleMenu = document.getElementById('nav-toggle')
-const navCloseMenu = document.getElementById('nav-close')
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
 
-if (navToggleMenu) {
-    navToggleMenu.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show-menu')
+        })
+    }
 }
 
-if (navCloseMenu) {
-    navCloseMenu.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
+showMenu('nav-toggle','nav-menu')
 
 const navLink = document.querySelectorAll('.nav__link')
 
