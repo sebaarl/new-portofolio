@@ -7,12 +7,16 @@ $(document).ready(function() {
                 $('.header-nav').css('transition' , '.4s')
                 $('.header').css('background-color', '#EFFFFD')
                 $('.header').css('box-shadow', '1px 1px 10px 0px #0000006e')
+                $('.header-nav__logo').css('color', '#222831')
+                $('.nav__toggle').css('color', '#222831')
             } else {
                 $('.header-nav').css('height', '5rem')
                 $('.header-nav').css('background-color' , '#398AB9')
                 $('.header-nav').css('transition' , '.4s')
                 $('.header').css('background-color', '#398AB9')
                 $('.header').css('box-shadow', 'none')
+                $('.header-nav__logo').css('color', '#EFFFFD')
+                $('.nav__toggle').css('color', '#EFFFFD')
             }
         }
     })
